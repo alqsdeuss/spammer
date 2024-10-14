@@ -1,2 +1,1 @@
-# spammer
-🚨A simple spam script on a respective channel
+# change token.txt and co.json
