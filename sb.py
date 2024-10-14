@@ -3,14 +3,14 @@ import requests
 import threading
 import time
 
-with open('sb.json', 'r') as json_file:
+with open('co.json', 'r') as json_file:
     config = json.load(json_file)
 
 msg = config['messagecount']
 message = config['message']
 chid = config['channelid']
 
-with open('tok.txt', 'r') as token_file:
+with open('token.txt', 'r') as token_file:
     tokens = [line.strip().replace('"', '') for line in token_file.readlines()]
 
 def send_message(token, chid, message):
